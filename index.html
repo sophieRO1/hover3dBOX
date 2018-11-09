@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>3d-box | 3dhover.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <!--  -->
+    <div class="project">
+            <div class="project__card">
+              <a href="" class="project__image"><img src="hoverr.jpg" width=600 height=400 alt=""></a>
+              <div class="project__detail">
+                <h2 class="project__title"><a href="#">Be Motivate</a></h2>
+                <small class="project__category"><a href="#">life is good</a></small>
+              </div>
+            </div>
+          </div>
+    <!-- js /hover3d -->
+      
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.js"
+  integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
+  crossorigin="anonymous"></script>
+    <script src="js/jquery.hover3d.js"></script>
+    <script src="js/JavaScript%20Main.js"></script>
+    <!-- js custom  -->
+    
+    <script>
+        
+        $(".project").hover3d({
+        selector: ".project__card",
+        shine: true,
+      });
+    //   
+
+       
+       $(".project").hover3d({
+
+// selector for element
+selector      : null,
+
+// Perspective value for 3d space
+perspective   : 1000,
+
+// Mouse movement sensitivity
+sensitivity   : 20,
+
+// Default behavior is the element will follow the mouse, look like it facing the mouse
+invert        : false,
+
+// Add shining layer
+shine       : false,
+
+// Helper class when mouse hover in the element
+hoverInClass  : "hover-in",
+
+// Helper class when mouse hover Out the element
+hoverOutClass : "hover-out",
+
+// Helper class when the mouse is hovering the element
+hoverClass    : "hover-3d"
+
+});
+    
+    
+    </script>
+</body>
+</html>
